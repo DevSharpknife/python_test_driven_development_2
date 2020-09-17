@@ -31,7 +31,17 @@ class CompoundInterestTest(unittest.TestCase):
 
     # Should return 149,058.55 given 100000 principal, 5 percent, 8 years
 
+    def test_compound_interest_calc__example_3(self):
+        calc_3 = CompoundInterest(100000, 8, 0.05)
+        get_compound_interest = calc_3.compound_interest_calc(calc_3.principal_amount, calc_3.years, calc_3.interest_rate)
+        self.assertEqual(149058.55, get_compound_interest)
+
     # Should return 0.00 given 0 principal, 10 percent, 1 year
+
+    def test_compound_interest_calc__example_4(self):
+        calc_4 = CompoundInterest(0, 1, 0.1)
+        get_compound_interest = calc_4.compound_interest_calc(calc_4.principal_amount, calc_4.years, calc_4.interest_rate)
+        self.assertEqual(0.00, get_compound_interest)
 
     # Should return 100.00 given 100 principal, 0 percent, 10 years
 
