@@ -7,6 +7,10 @@ from src.high_scores import latest, personal_best, personal_top_three
 
 class HighScoresTest(unittest.TestCase):
 
+    def setUp(self):
+
+        self.list_1 = [34, 54, 765, 234, 1, 32, 764, 98, 901, 378, 811]
+        
     # Tests
 
     # Test latest score (the last thing in the list)
