@@ -29,6 +29,10 @@ class HighScoresTest(unittest.TestCase):
         get_hi_to_low_scores = hi_to_low_scores(self.list_1)
         self.assertEqual([901, 811, 765, 764, 378, 234, 98, 54, 34, 32, 1], get_hi_to_low_scores)
     # Test top three when there is a tie
+    def test_personal_top_three__tied(self):
+        self.list_2 = [999, 23, 456, 999, 782, 98, 321, 999, 666, 998]
+        get_tied_top_three = personal_top_three(self.list_2)
+        self.assertEqual([999, 999, 999], get_tied_top_three)
 
     # Test top three when there are less than three
 
