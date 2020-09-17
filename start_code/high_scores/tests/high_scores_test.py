@@ -17,7 +17,9 @@ class HighScoresTest(unittest.TestCase):
         get_latest_score = latest(self.list_1)
         self.assertEqual(811, get_latest_score)
     # Test personal best (the highest score in the list)
-
+    def test_personal_best(self):
+        get_personal_best = personal_best(self.list_1)
+        self.assertEqual(901, get_personal_best)
     # Test top three from list of scores
 
     # Test ordered from highest tp lowest
