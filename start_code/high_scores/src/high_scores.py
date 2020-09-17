@@ -10,4 +10,4 @@ def personal_top_three(scores):
 def hi_to_low_scores(scores):
     return sorted(scores, reverse=True)
 
-    
+
