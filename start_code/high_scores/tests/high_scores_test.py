@@ -21,7 +21,9 @@ class HighScoresTest(unittest.TestCase):
         get_personal_best = personal_best(self.list_1)
         self.assertEqual(901, get_personal_best)
     # Test top three from list of scores
-
+    def test_personal_top_three(self):
+        get_personal_top_three = personal_top_three(self.list_1)
+        self.assertEqual([901, 811, 765], get_personal_top_three)
     # Test ordered from highest tp lowest
 
     # Test top three when there is a tie
