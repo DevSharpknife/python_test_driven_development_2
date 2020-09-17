@@ -7,7 +7,7 @@ class CompoundInterestTest(unittest.TestCase):
     # Tests
 
     # Should return 732.81 given 100 principal, 10 percent, 20 years
-
+    def test_compund
     # Should return 181.94 given 100 principal, 6 percent, 10 years
 
     # Should return 149,058.55 given 100000 principal, 5 percent, 8 years
