@@ -33,7 +33,13 @@ class HighScoresTest(unittest.TestCase):
         self.list_2 = [999, 23, 456, 999, 782, 98, 321, 999, 666, 998]
         get_tied_top_three = personal_top_three(self.list_2)
         self.assertEqual([999, 999, 999], get_tied_top_three)
-
     # Test top three when there are less than three
-
+    def test_personal_top_three__less_than_three(self):
+        self.list_3 = [999, 998]
+        get_top_three_less = personal_top_three(self.list_3)
+        self.assertEqual([999, 998], get_top_three_less)
     # Test top three when there is only one
+    def test_personal_top_three__one_in_list(self):
+        self.list_4 = [999]
+        get_top_one = personal_top_three(self.list_4)
+        self.assertEqual([999], get_top_one)
